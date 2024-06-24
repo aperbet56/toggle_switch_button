@@ -66,7 +66,7 @@ body {
 
 .form__items input:checked + label::before {
     border: 1px solid #5770d7;
-    background-color: #d9dbe5;
+    background-color: #f1f1f1; 
 }
 
 .form__items input:checked + label::after {
