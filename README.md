@@ -6,7 +6,7 @@ Création d'un bouton à bascule/d'un interrupteur à bascule en utilisant le HT
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/toggle_switch_button/
 
 ## Développez avec
 
