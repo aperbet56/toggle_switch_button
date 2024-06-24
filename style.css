@@ -1,0 +1,75 @@
+/**** Reset ****/
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111111;
+    color: #f1f1f1;
+    display: grid;
+    place-items: center;
+}
+
+.form {
+    display: grid;
+    gap: 10px;
+}
+
+.form__items {
+    margin-bottom: 15px;
+}
+
+.form__items input[type="checkbox"] {
+    display: none;
+}
+
+.form__items label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.form__items label::before {
+    content: "";
+    width: 70px; 
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #999999;
+    border-radius: 12px;
+    background-color: #eeeeee;
+    transition: all 0.25s ease-in-out;
+}
+
+.form__items label::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+    background-color: #bbbbbb;
+    transition: all 0.25s ease-in-out;
+}
+
+.form__items input:checked + label::before {
+    border: 1px solid #5770d7;
+    background-color: #d9dbe5;
+}
+
+.form__items input:checked + label::after {
+    left: 45px;
+    background-color: #5770d7;
+}
